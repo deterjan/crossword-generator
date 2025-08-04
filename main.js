@@ -136,13 +136,13 @@ function drawLabels(scene, placements) {
             )
         );
 
-        drawn.push(
-            scene.add.text(
-                85, 60,
-                `${gridIndex + 1}/${allGridsArr.length}`,
-                {font: '20px monospace', fill: 'crimson'}
-            ).setScrollFactor(0)
-        );
     }
+    
+    drawn.push(
+        scene.add.text(
+            85, 60,
+            `${gridIndex + 1}/${allGridsArr.length}`,
+            {font: '20px monospace', fill: 'crimson'}
+        ).setScrollFactor(0)
+    );
 }
-
