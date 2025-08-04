@@ -7,8 +7,6 @@ const wordList = dictionary.split('\n');
 const trie = buildTrie(wordList);
 let drawn = [];
 
-let s;
-
 const config = {
     type: Phaser.AUTO,
     backgroundColor: BG_COLOR,
@@ -39,7 +37,6 @@ function create() {
     }
 
     allGridsArr = Array.from(allGridsMap.values());
-    s = this;
 
     const nextButton = this.add.text(25, 20, 'Next', {
         font: '18px monospace',
